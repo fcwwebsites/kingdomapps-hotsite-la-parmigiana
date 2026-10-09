@@ -156,6 +156,9 @@ svg{width:1.15em;height:1.15em;flex:none}
 .show-float .wa-float{transform:none}
 @media (max-width:600px){.wa-float{left:16px;right:16px;justify-content:center}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.gallery:has(> .g-item:nth-child(2):last-child){grid-template-columns:repeat(2,1fr)}
+.gallery:has(> .g-item:nth-child(2):last-child) .g-item{grid-column:auto;grid-row:auto}
+.gallery:has(> .g-item:nth-child(2):last-child) .g-item img{aspect-ratio:3/4}
 /* iFood no menu do topo (leads ext) */
 .site-nav .nav-ifood a{display:inline-flex;align-items:center;gap:.45em}
 .site-nav .nav-ifood svg{width:1.6em;height:1.6em}
